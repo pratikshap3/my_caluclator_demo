@@ -32,8 +32,10 @@ pipeline {
             }
         }
         stage('Deploy') {
+            steps{
              echo "Deployed successfully!!""
             
-        }
+                 }
+                }
     }
 }
