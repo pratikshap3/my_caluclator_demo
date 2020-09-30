@@ -32,8 +32,8 @@ pipeline {
             }
         }
         stage('Deploy') {
-            agent any{ echo "Deployed successfully!!""
-            }
+             echo "Deployed successfully!!""
+            
         }
     }
 }
