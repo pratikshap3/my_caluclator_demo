@@ -32,20 +32,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            agent {
-                docker{
-                   image 'python:3.8-alpine'
-                }
-              }
-           
-       steps {
-                sh 'python -m py_compile deployement.py'
-           stash(name: 'compiled-results', includes: '*.py*')
-
-            }
-           
-        }
+        
        
     }
 }
